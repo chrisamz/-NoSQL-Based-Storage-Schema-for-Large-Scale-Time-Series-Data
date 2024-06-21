@@ -1,0 +1,17 @@
+kafka:
+  broker: 'localhost:9092'
+  topic: 'time_series_data'
+
+data_generation:
+  interval: 1  # Interval in seconds for data generation
+
+cassandra:
+  contact_points: ['localhost']
+  keyspace: 'timeseries'
+  table: 'data'
+
+influxdb:
+  host: 'localhost'
+  port: 8086
+  database: 'timeseries'
+  measurement: 'data'
